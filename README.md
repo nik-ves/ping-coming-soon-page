@@ -1,1 +1,1 @@
-# ping-coming-soon-page
+# Ping Coming Soon Page - Frontend Mentor
