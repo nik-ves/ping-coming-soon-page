@@ -6,6 +6,10 @@ $color-gray: hsl(0, 0%, 59%);
 $color-very-dark-blue: hsl(209, 33%, 12%);
 $color-white: #fff;
 
+// MEDIA QUERIES BREAKPOINTS
+$bp-largest: 62em; // 1000px
+$bp-large: 44em; // 704px
+
 *,
 *::before,
 *::after {
@@ -17,6 +21,14 @@ $color-white: #fff;
 html {
     box-sizing: border-box;
     font-size: 62.5%; // Makes 1rem = 10px -- 10px/16px = 62.5%
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 40%;
+    }
 }
 
 body {
@@ -24,4 +36,8 @@ body {
     // min-height: 100vh;
     font-family: 'Libre Franklin', sans-serif;
     padding: 0 2rem;
+
+    @media only screen and (max-width: $bp-large) {
+        min-height: none;
+    }
 }
